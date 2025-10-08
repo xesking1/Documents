@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMG - Sessió 3 - Elements en línea</title>
+    <script src="js/exemple.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Elements en línea</h1>
+        <p><strong>Objectiu</strong>: Entendre el per què de cada etiqueta de text i aplicar l'etiqueta més adequada segons el contingut.</p>
+        <nav aria-label="Navegación interna">
+            <a href="#enllaços">Enllaços</a>
+            <a href="#emfasi">Èmfasi</a>
+            <a href="#cites">Cites</a>
+
+        </nav>
+    </header>
+    <main>
+        <section id="enllaços">
+            <h2>1. Enllaços amb &lt;a&gt;</h2>
+            <p>Relaciona documents i recursos. Sense enllaços la web no és web.</p>
+            <p><strong>Exemple</strong></p>
+            <p>&lt;a href="https://www.paucasesnovescifp.cat" target="_blank" rel="noopener noreferrer"&gt;Web Pau Casesnoves&lt;a/&gt;</p>
+            <p>El que veuriem per pantalla seria: <a href="https://www.paucasesnovescifp.cat" target="_blank" rel="noopener noreferrer">Web Pau Casesnoves</a></p>
+        </section>
+
+        <section id="emfasi">
+            <h2>2. Èmfasi i importància &lt;em&gt; &lt;strong&gt; &lt;i&gt; &lt;b&gt; &lt;span&gt;</h2>
+            <ul>
+                <li>em -> Posa el text en cursiva i assigna significat semàntic.</li>
+                <li>strong -> Posa el text en negreta i assigna significat semàntic.</li>
+                <li>i -> Posa el text en cursiva sense significat semàntic.</li>
+                <li>b -> Posa el text en negreta sennse significat semàntic.</li>
+                <li>span -> Es un contenidor en línia sense significat semàntic.</li>
+            </ul>
+        </section>
+
+        <section id="cites">
+            <h2>3. Cites: &lt;q&gt;, &lt;blockquote&gt; i &lt;cite&gt;</h2>
+            <p>Donen crèdit a l'autor.</p>
+            <p><strong>Exemple cita llarga: </strong><q cite="https://www.paucasesnovescifp.cat">Avui, dia 6 d'octubre farem 2 expressions de tutoria, una per DAM i una altra per a DAW,
+            a les 17h de l'horabaixa.    
+            </q></p>
+
+            <p><strong>Exemple de blockquote: </strong><blockquote cite="https://www.paucasesnovescifp.cat">Avui, dia 6 d'octubre farem 2 expressions de tutoria, una per DAM i
+             una altra per a DAW, a les 17h de l'horabaixa.</blockquote></p>
+
+            <p><strong>Exemple q: </strong> <q cite="https://www.paucasesnovescifp.cat">Avui, dia 6 d'octubre farem 2 expressions de tutoria, una per DAM i una altra per a 
+            DAW,a les 17h de l'horabaixa.</q><cite>CIFP Pau Casesnoves</cite></p>
+        </section>
+        
+    </main>
+    
+    <footer></footer>
+
+</body>
+</html>
