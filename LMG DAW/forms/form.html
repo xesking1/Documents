@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1>El meu lloc web</h1>
+        <nav aria-label="Navegació interna">
+            <a href="https://paucasesnovescifp.cat/">Pau Casetes</a>
+            <a href="#inici">Inici</a>
+            <a href="sessio7.html">Darrera sessió</a>
+        </nav>
+    </header>
+    <main>
+        <section id="inici">
+        <form action="./form.html" method="metodo http" name="nombre">
+        
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <h2>Inicia sessió</h2>
+                <label for="user">Usuari: </label>
+                <br>
+                <input type="text" id="user">
+                <br>
+                <label for="passwd">Contrasenya: </label>
+                <br>
+                <input type="password" id="passwd">
+                <br>
+                <input type="submit" value="Emimi">
+            </fieldset>
+            <br>
+            <p>Sexo: </p>
+            <input type="radio" id="mujer" name="sexo" value="Mujer">
+            <label for="mujer">Mujer</label>
+            <input type="radio" id="hombre" name="sexo" value="Hombre">
+            <label for="hombre">Hombre</label>
+            <br>
+            <input type="checkbox" id="interes" value="quiero" name="css">
+            <label for="interes"></label>
+            <br>
+            <label for="mensaje">Introduce tu testamento:</label>
+            <br>
+            <textarea name="mensaje" id="mensaje" rows="4" cols="40"></textarea>
+            <br>
+            <input type="email" name="" id="">
+            <br>
+            <input type="number" name="" id="">
+            <br>
+            <input type="date" name="" id="">
+            <br>
+            <label for="asunto">Asunto: </label>
+            <select name="asunto" id="asunto">
+                <option value="web">Funcionamiento de la web</option>
+                <option value="proyecto">Proyecto escolar</option>
+                <option value="otros">Otros</option>
+            </select>
+            <br>
+            <input type="color" name="" id="">
+            <br>
+            <input type="range">
+            <br>
+            <input type="search" name="" id="">
+        </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Xesking1</p>
+    </footer>
+</body>
+
+</html>

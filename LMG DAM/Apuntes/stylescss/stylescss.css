@@ -1,0 +1,47 @@
+@font-face{
+	font-family: 'Pricedown';
+	src: url('/home/alumne/Baixades/pricedown/') format('opentype');
+}
+
+h1 {
+	font-family: 'Pricedown';
+}
+
+body {
+	margin-left: 3%;
+	margin-top: 3%;
+	margin-right: 3%;
+	margin-bottom: 3%;
+}
+
+.apuntes {
+	text-align: center;
+	font-size: 300%;
+	margin-top: 15%;
+}
+
+.creador {
+	text-align: center;
+	font-size: 120%;
+}
+
+.indice {
+	text-align: center;
+}
+
+.tabla1 {
+	margin-left: 45%;
+}
+
+.analisis {
+	text-align: center;
+}
+
+.divanalisis {
+	width: 3350px;
+}
+
+.listaanalisis {
+	
+	text-align: left;
+}

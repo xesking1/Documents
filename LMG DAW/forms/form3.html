@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributs formulari</title>
+</head>
+
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+    <main>
+        <section id="formulariContacte">
+            <form action="submit" method="get">
+                <fieldset>
+                    <legend>section</legend>
+                    <h2>Contact information</h2>
+                    <label for="name">Name: *</label>
+                    <br>
+                    <input type="text" id="name" placeholder="Full name" maxlength="20" required>
+                    <br>
+                    <label for="email">Email: </label>
+                    <br>
+                    <input type="email" id="email" placeholder="example@example.com" required>
+                    <br>
+                    <label for="quantity">Quantity</label>
+                    <br>
+                    <input type="number" id="quantity" placeholder="0" min="0" max="10" step="2">
+                    <br> 
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" cols="40" rows="4" placeholder="Write your message here"></textarea>
+                    <br>
+                    <input type="checkbox" id="policy" required>
+                    <label for="policy">I agree to the privacy policy *</label>
+                    <br>
+                    <input type="submit" value="Send Message">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+
+</html>

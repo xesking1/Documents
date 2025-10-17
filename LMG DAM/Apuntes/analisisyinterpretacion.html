@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="stylescss/stylescss.css">
+</head>
+<body>
+	<h1 class="analisis">Análisis y interpretación del código</h3>
+	<center>
+		<div class="divanalisis">
+			<ol class="listaanalisis">
+				<li>
+					<p>Los datos</p>
+				</li>
+				<li>
+					<p>Almacenamiento de los datos</p>
+				</li>
+				<li>
+					<p>Introduccion al lenguaje de marcas</p>
+				</li>
+				<li>
+					<p>Clasificación de los lenguajes de marcas</p>
+				</li>
+			</ol>
+		</div>
+	</center>
+	<h2 style="text-align: center;">Los datos</h2>
+	<p>Los datos son representaciones de aspectos del mundo real que se recojen para hacer calculos, mostrarlos, organizarlos, etc. El objetivo es que posteriormente alguien pueda hacer alguna cosa con ellos, como tomar decisiones o generar nuevos datos</p>
+	<h4>Ejemplo</h4>
+	<p>Una base de datos puede contener datos sobre un vehivulo, como la marca, el modelo, el año de fabricación, el consumo de combuustible, el quilometraje y el historial de mantenimiento. Estos datos puedes ser analizados para optmizar los servicios de una empresa de alquiler de coches</p>
+
+	<h3>Caracteristicas de los datos</h3>
+	<h4>A quien van dirigidos (Destinatarios):</h4>
+	<p><b>Humanos: </b>Cuando los datos estan destinados a seres humanos, necesitan una estructura específica y comprensible. Esto incluye formatos leibles como tablas, graficos o informes, que ayudan a oganizar e interpretar la información facilmente. Por ejemplo, una tabla de resultados financieros tiene que ser clara y facil de entender para que alguien lo lea</p>
+	<p><b>Programa o maquinas: </b>En cambio, cuando los datos estan destinados a ser procesdos por porgramas informáticos, deben estar estructurados de mmanera que sean facilmente procesables e identificables. Esto incluye el uso de formatos estándar como el JSON, XML o CSV, que permiten que los sistemas automaticamente entiendan y procesen estos datos sin la intervención humana directa</p>
+
+	<h3>Reutilizacion de los datos</h3>
+	<p>Los datos, una vez recogidos, pueden ser reutilizados en múltiples contextos. Eso es especialmente importante en sectores como la ciencia, donde los datos pueden servir para diversos estudios o experimentos. Para que esto sea posible, es esencial que los datos se almacenen de manera ordenada, estructurada y con metadatos que facilite la comprensión y la reutilización futura. Una base de datos bien estructurada, con etiquetas claras y un buen sistema de catalogación, facilita esta reutilización</p>
+
+	<h3>Compartición de los datos</h3>
+	<p>Con la evolución de la tecnologia y la globalización, la compratición de datos se ha vuelto mas relevante. Ahora es mucho mas comun que los datos que se generan en una parte del mundo puedan ser utilizados en otro lado casi en tiempo real, gracias a Internet. Este hecho requiere que sistemas de almacenamiento y transmisión sean seguros y eficientes. Ademas, es importante utilizar estándares abiertos o formatos compatibles que permitan esta transferéncia sin perdida de datos o errores de comprensión</p>
+
+	<h2>El almacenamiento de datos</h2>
+	<p>El almacenamiento de datos es un componente clave en los sistemas informáticos ya que permite la representación, manipulación y recuperación de información de manera eficiente.</p>
+
+	<p>Los datos en ordenadores se representan utlizando el formato binario, que consiste en una série de dígitos binarios, conocidos como bits, que pueden tener el valor 1 o 0. Esta representacion és la base del funcionamiento de cualquier sistema informático, ya que los ordenadores procesan la información mediante operaciones binarias</p>
+
+	<h3>Clasificación de los datos</h3>
+	<ul>
+		<li>
+			<h4>Datos de texto</h4>
+			<ol>
+				<li>
+					<p>Los datos de texto son leibles por humanos y estructuradas mediante codificaciones de caracteres, como ASCII o Unicode. Eso significa que cada letra, número o símbolo se representa a traves de un código específico que despues se traduce a binario.</p>
+				</li>
+				<li>
+					<p>Este tipo de datos se encuentran en documentos correos electrónicos o páginas web, donde és esencial mantener la legibilidad para las personas. El formato texto és muy flexible y fácil de editar, pero tambien puede ser menos eficiente en terminos de almacenamento en comparacion con otros formatos mas compactos</p>
+				</li>
+			</ol>
+		</li>
+		<li>
+			<h4>Datos binarios</h4>
+			<ol>
+				<li>
+					<p>Los datos binarios son datos que no siguen una estructura deginida que puedan ser facilmente leidas por humanos. Incluyen ficheros como imágenes, vídeos, áudios, y otros formatos multimedia, que se codifican directamente en bits sin que los humanos puedan interpretarlos sin un programa especializado</p>
+				</li>
+				<li>
+					<p>Ademas de la información principal, los datos binarios pueden incluir matedatos, que són datos adicionales que descrien el contenido o otras propiedades del fichero. Por ejemplo, en una fotografia, los metedatos pueden incluir información como la fecha en la que se hizo la foto, el dispositivo utilizado, y otros detalles relevantes</p>
+				</li>
+				<li>
+					<p>Estos datos pueden requerir mas espcaio de almacenamiento y son manipulados por programas especializados que saben como interpretar los bits que los conforman</p>
+				</li>
+			</ol>
+		</li>
+		<li>
+			<h4>Metadatos</h4>
+			<p>Los metadatos són información adicional que describe o proporciona contexto sobre los datos principales. Estos datos sobre los datos pueden incluir información como el tipo de fichero, la fecha de creación, el autor, las etiquetas de clasificación, o incluso los detalles técnicos sobre como se ha creado o editado el fichero. Los metadatos son extremadamente útiles para organizar, buscar y interpretar la información guardad ayudando a optimizar procesos como el arxivado o la indexación de documentos.
+				<ol>
+					<li>
+						<p>Funcion: Optimizan el almacenamiento y la recuperacion de informacion, ya que permiten a los sistemas saber que son los datos y como se han de interpretar sin necesidad de leer todo el contenido del fichero.</p>
+					</li>
+					<li>
+						<p>Problemas potenciales: Los metadatos pueden causar complicaciones en la comparticion de datos entre sistemas. Si el programa o sistema que intenta recuperar la información no entiendo o no conoce el formato de los metadatos, puede no ser capaz de interpretar correctamente los datos princiàles. Esto puede provocar perdidas de información o problemas de compatibilidad.</p>
+					</li>
+				</ol>
+			</p>
+		</li>
+	</ul>
+
+	<h3>Formatos del fichero</h3>
+	<p>Los formatos de ficheros definen como se representan los datos dentro de un fichero. Diferentes formatos tienen diferentes estructuras y usos, dependiendo del tipo de datos que se necesitan para almacenar.</p>
+	<p>CSV (Comma-Separated Values):
+		<ul>
+			<li>
+				<p>Descripción: Un formato de fichero muy sencillo que utiliza lineas de texto para representar datos, donde cada campo de información está separado por comas.</p>
+			</li>
+			<li>
+				<p>Ventajas: Es facil de generar y leer para la mayoria de programas y lenguajes de programación. No requiere herramientas especializadas y es compatible con casi todos las plataformas, esa cosa la hace muy popular para el intercanvio de datos.</p>
+			</li>
+			<li>
+				<p>Inconvenientes: Tiene limitaciones en la capacidad para gestionar datos complejos, como cuando los datos contienen comas dentro de sus campos. Ademas, no incluye metadatos, por lo que no permite descripcion del contenido o la estructura de los datos con tanto detalle como otros formatos mas avanzados.</p>
+			</li>
+		</ul>
+	</p>
+
+	<p>Ficheros de marcas (XML, HTML, etc.):
+		<ul>
+			<li>
+				<p>Descrpción: Estos tipos de ficheros combinan elementos de ficheros de texto y binarios. Estan estructurados mediante etiquetas o marcas, que definen tanto los datos como su estructura.</p>
+			</li>
+			<li>
+				<p>Ventajas: Permiten incorporar metadatos juntamente con los datos principales oferiendo una estructura mas rica y flexible. Los ficheros de marcas son autodescriptivas, es decir, contienen informacion soble el tipo y la estructura de datos.</p>
+			</li>
+			<li>
+				<p>Inconvenientes: Estos ficheros pueden ser mas grandes y menos eficientes que otros formatos más simples como el CSV, a causa de la cantidad de informacion adicional que incluye. Ademas, necesitan herramientas mas avanzadas para procesarlos.</p>
+			</li>
+		</ul>
+	</p>
+
+	<h2>Introduccion a los lenguajes de marcas</h2>
+	<p>Los lenguajes de marcas son sistemas de codificacion que permiten estructurar y presentar informacion de manera que sean comprensibles tanto por humanos como para maquinas. Estos lenguajes utilizan etiquetas para identificar diferentes partes del contenido, facilitando su interpretación y manipulación.</p>
+
+	<h2>Clasificacion de los lenguajes de marcas</h2>
+	<center>
+		<div>
+			<h3>Lenguajes procedimentales y de presentación</h3>
+			<p>Como HTML, definen como se muestran los datos, centrandose en su estructura y formato visual. HTML organiza los elementos de una pagina web, mientras que CSS se encarga de estilizar estos elementos para darles un aspecto atractivo y coherente en los navegadores.</p>
+		</div>
+		<div>
+			<h3>Lenguajes descriptivos</h3>	
+			<p>Como XML y JSON, describen la estructura de los datos sin indicar como se tienen que enseñar. Son como una lista de elementos: XML detalla a los componentes con precision, mientras que JSON ofiere una version mas simple facil de leer.</p>
+		</div>
+	</center>
+
+	<center>
+		<div>
+			<h3>HTML(HyperText Markup Language)</h3>
+			<p>HTML es un lenguaje de marcaas diseñado especifficamente para la presentación de información en la web. A diferencia de XML, HTML se centra en como enseñar la información, pero presenta limitaciones en la reutilizacion de la información y en su interpretación para programas automaticas. HTML ha estado unos de los primeros lenguajes de marcas utilizados para ccrear paginas web, y su evolucion ha estado influenciada por la necesidad de mejorar la interaccion con los usuarios y la presentacion de contenidos.</p>
+		</div>
+		<div>
+			<h3>XML (eXtensible Markup Language)</h3>
+			<h3>JSON (JavaScript Object Notation)</h3>
+			<p>XML es un lenguaje de marcas que destaca por su capacidad de extensibilidad. Permite la definicion de documentos con etiquetas personalizadas, las que son muy utiles en diversas aplicaciones, como la presentacion de paginas web y la gestion de datos. XML permite una mejor estructurazion y reutilizacion de los datos, separando claramente los datos de su presentación. JSON a dia de hoy ha ganado mucha popularidad como alternativa a XML por el intercanvio de datos, especalmente en aplicaciones web. A diferencia de XML, JSON utiliza una sintaxis mas ligera y facil de leer tanto para humanos como para maquinas, cosa que hace qque sea mas eficiente en terminos de transmisión y procesamiento de datos.</p>
+		</div>
+	</center>
+
+
+	<h4>Cuando utilizar cada uno</h4>
+	<ul>
+		<li>
+			<p>XML/JSON:
+				<ol>
+					<li>
+						<p>Configuracion de aplicaciones: Definir las opciones y preferencias de una aplicacion.</p>
+					</li>
+					<li>
+						<p>Intercambio de datos: transmite datos entre diferentes sistemas.</p>
+					</li>
+					<li>
+						<p>Creacion de formatos de datos personalizados: Define estructuras de datos especificos para una aplicación o dominio.</p>
+					</li>
+				</ol>
+			</p>
+		</li>
+		<li>
+			<p>HTML:
+				<ol>
+					<li>
+						<p>Creacion de paginas web: Da estructura y contenido a las paginas web.</p>
+					</li>
+					<li>
+						<p>Diseño de interficies de usuario: Crear la apariencia visual de una pagina web.</p>
+					</li>
+					<li>
+						<p>Hacer que el contenido sea accesible: Asegurar que las personas con discapacidades puedan acceder al contenido de una pagina web.</p>
+					</li>
+				</ol>
+			</p>
+		</li>
+	</ul>
+
+	<h2>Estructura y reglas sintacticas</h2>
+	<h3>HTML</h3>
+	<p>El HTML es un lenguaje de marcas que se utiliza para estructurar contenidos web. Sigue una estructura jerarquica donde haya etiquetas de obertura y de cierre, y una sintaxi bien definida que el navegador ha de interpretar correctamente.</p>
+	<p>Reglas sintacticas:</p>
+	<ol>
+		<li>
+			<p>Cada etiqueta de obertura tiene que tener su correspondiente etiqueta de cierre</p>
+		</li>
+		<li>
+			<p>La estructura ha de seguir un orden correcto: dentro del body no pueden haber elementos de la cabezera</p>
+		</li>
+	</ol>
+
+	<h4>Problemas de documentos mal formados</h4>
+	<p>So un documento HTML está mal formado, puede provocar que la pagina web se muestre incorrectamente o que algunas partes no se visualizen.</p>
+	<p>Consecuencia: Algunos navegadores intentan corregir automatcamente los errores, pero otros podrian mostrar el contenido de manera erronea.</p>
+
+	<h4>Espacios de nombres</h4>
+	<p>En HTML, los espacios de nombre no son utilizados como en XML, pero son importantes en casos de embenado de lenguajes o tecnologias externas, como SVG.</p>
+	<p>Ventajas: El so del espacio de nombre xmlns para SVG permite que el navegador sepa que el conenido dentro de estas etiquetas es vectorial grafico, no HTML.</p>
+
+</body>
+</html>
