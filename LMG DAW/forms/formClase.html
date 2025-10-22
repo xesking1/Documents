@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sindicato</title>
 </head>
+
 <body>
     <header>
         <h1>Frank Silva</h1>
-        <h2>Breve descripción de la página web</h2>
+        <p>Breve descripción de la página web</p>
 
         <nav>
-            <a href="">Sobre mí</a>
-            <a href="">Estudios y experiencia</a>
-            <a href="">Contacta</a>
+            <ul>
+                <a href="#sobreMi"><li>Sobre mí</li></a>
+                <a href="#estudiosExperiencia"><li>Estudios y experiencia</li></a>
+                <a href="#contacta"><li>Contacta</li></a>
+            </ul>
         </nav>
     </header>
     <main>
         <section id="sobreMi">
-            <img src="" alt="">
-            <h3>Sobre mí</h3>
+            <img src="img/imgPerfil/persona8.jpg" alt="chicaAlternativa" width="200px">
+            <!-- <details>
+                <summary><h2>Sobre mí</h2></summary>
+                Breve desripción sobre tu persona
+            </details> -->
+            <h2>Sobre mí</h2>
             <p>Breve descripción sobre tu persona</p>
         </section>
-        <section id="estudiosExp">
-            <h3>Estudios y experiencia</h3>
-            <section>
-                <h4>Estudios</h4>
-            </section>
-            <section>
-                <h4>Experiencia</h4>
-            </section>
+
+        <section id="estudiosExperiencia">
+            <h2>Estudios y experiencia</h2>
+            <div id="estudios">
+                <h3>Estudios</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+            <div id="experiencia">
+                <h3>Experiencia</h3>
+                <ul>
+                    <li>Amansando fieras desde 2016 (lo ha puesto la profe)</li>
+                    <li>Ayudante</li>
+                </ul>
+            </div>
         </section>
+
         <section id="contacta">
-            <h3>Contacta</h3>
-            <form action="get">
+            <h2>Contacta</h2>
+            <form action="submit" name="contacta">
                 <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre">
+                <input type="text" id="nombre" placeholder="Pere">
                 <br>
                 <label for="apellidos">Apellidos: </label>
-                <input type="text" id="apellidos">
+                <input type="text" id="apellidos" placeholder="Peixet Pernil">
                 <br>
                 <label for="email">Email: </label>
-                <input type="email" id="email">
+                <input type="email" id="email" placeholder="peixet666@gmail.com">
                 <br>
                 <label for="tlf">Teléfono: </label>
                 <select name="prefijo" id="prefijo">
                     <option value="esp">+34</option>
                     <option value="fr">+33</option>
                 </select>
-                <input type="text" id="tlf" maxlength="9">
+                <input type="text" id="tlf" placeholder="666 222 888" pattern="^[0-9]{3} [0-9]{3} [0-9]{3}$">
                 <br>
                 <label>Sexo:</label>
                 <br>
@@ -80,23 +98,70 @@
                 <input type="submit">
             </form>
         </section>
+
         <section id="hobbies">
-            <h3>Hobbies</h3>
+            <h2>Hobbies</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </section>
+
         <section id="objetivos">
-
+            <h2>Objetivos</h2>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
         </section>
-        <section id="habilidades">
 
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <table>
+                <thead>
+                    <th>Habilidad</th>
+                    <th>Nivel</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
+
     <footer>
         <img src="img/copyright.png" alt="copy" width="20px">
         <p>2025 Frank Silva Rama</p>
         <p>Todos los derechos reservados</p>
-        
-        <img src="img/gitHubLogo.png" alt="github">
-        <img src="img/linkedinLogo.png" alt="github">
+
+        <a href="https://github.com/" target="_blank"><img src="img/gitHubLogo.png" alt="github" width="50px"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedinLogo.png" alt="github" width="50px"></a>
     </footer>
 </body>
+
 </html>
