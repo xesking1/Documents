@@ -116,3 +116,33 @@ WHERE
     UPPER(AUTHOR.name) NOT LIKE 'NOAH'
         OR UPPER(AUTHOR.surnames) NOT LIKE 'GORDON'
         AND UPPER(GENRE.name) LIKE 'HISTORIA';
+        
+
+-- Group by
+select count(*), CITY from MEMBER group by CITY;
+-- (Q100) Authors code and the number of books written by them
+select author_code, count(*) numberBooks from BOOK group by author_code;
+
+-- (Q101) Books code and the amount of copies of each book.
+-- es innecesario el uso de la tabla book, esto era lo que me salió hacer la primera vez
+select COPY.book_code, count(*) copyCount from BOOK left join COPY on(BOOK.book_code=COPY.book_code) group by COPY.book_code;
+-- esta es la buena
+select book_code, count(copy_code) copyCount from COPY group by book_code;
+
+-- (Q102) Genres code and the number of books of each genre.
+-- otra vez innecesario
+select genre_code, count(GENREBOOK.book_code) bookCount from GENREBOOK join BOOK on(GENREBOOK.BOOK_CODE=BOOK.BOOK_CODE) group by genre_code;
+-- la buena
+select genre_code, count(book_code) bookCount from GENREBOOK group by GENRE_CODE;
+
+-- (Q103) Author's name and the number of books written by them. 
+select concat_ws(" ", name, surnames) fullName, count(book_code) bookCount from BOOK join AUTHOR using(author_code) group by author_code;
+
+-- (Q104) Books title and the amount of copies of each book. 
+select title, count(book_code) copyAmount from BOOK join COPY using(book_code) group by book_code;
+
+-- (Q105) Genres name and the number of books of that genre. 
+select name, count(book_code) bookCount from GENRE join GENREBOOK using(genre_code) group by genre_code;
+
+-- (Q106) Members name and the number of borrows for each member. 
+select concat_ws(" ", name, surnames) fullName, count(copy_code) borrowCount from MEMBER join BORROW using(member_code) group by member_code;

@@ -14,9 +14,15 @@
 
         <nav>
             <ul>
-                <a href="#sobreMi"><li>Sobre mí</li></a>
-                <a href="#estudiosExperiencia"><li>Estudios y experiencia</li></a>
-                <a href="#contacta"><li>Contacta</li></a>
+                <a href="#sobreMi">
+                    <li>Sobre mí</li>
+                </a>
+                <a href="#estudiosExperiencia">
+                    <li>Estudios y experiencia</li>
+                </a>
+                <a href="#contacta">
+                    <li>Contacta</li>
+                </a>
             </ul>
         </nav>
     </header>
@@ -52,6 +58,13 @@
         <section id="contacta">
             <h2>Contacta</h2>
             <form action="submit" name="contacta">
+                <label for="opciones">Di algo</label>
+                <input list="opciones" name="listilla">
+                <datalist id="opciones">
+                    <option value="hola">
+                    <option value="adios">
+                </datalist>
+                <br>
                 <label for="nombre">Nombre: </label>
                 <input type="text" id="nombre" placeholder="Pere">
                 <br>
@@ -160,7 +173,8 @@
         <p>Todos los derechos reservados</p>
 
         <a href="https://github.com/" target="_blank"><img src="img/gitHubLogo.png" alt="github" width="50px"></a>
-        <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedinLogo.png" alt="github" width="50px"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedinLogo.png" alt="github"
+                width="50px"></a>
     </footer>
 </body>
 
