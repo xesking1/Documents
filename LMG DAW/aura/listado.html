@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+</head>
+
+<body>
+    <header>
+        <h1>AURA</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#main">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav aria-label="Migas">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li>Catálogo</li>
+            </ol>
+        </nav>
+    </header>
+    <main id="main">
+        <!-- Hacer los filtros y ordenacion con un formulario -->
+        <section>
+            <form action="listado.html" method="get">
+                <fieldset id="categorias">
+                    <legend>Filtros</legend>
+                    <!-- <ul>
+                        <li><a href="?cat=anillos">Anillos</a></li>
+                        <li><a href="?cat=collares">Collares</a></li>
+                        <li><a href="?cat=brazaletes">Brazaletes</a></li>
+                        <li><a href="?cat=pendientes">Pendientes</a></li>
+                    </ul> -->
+                    <label for="categoria">Caterogría: </label>
+                    <select id="categoria">
+                        <option value="">-</option>
+                        <option value="anillos" name="categoria">Anillos</option>
+                        <option value="collares" name="categoria">Collares</option>
+                        <option value="brazaletes" name="categoria">Brazaletes</option>
+                        <option value="pendientes" name="categoria">Pendientes</option>
+                    </select>
+
+                    <label for="min">Mínimo €</label>
+                    <input id="min" name="min" type="number" placeholder="0€">
+                    <label for="max">Máximo €</label>
+                    <input id="max" name="max" type="number" placeholder="2500€">
+
+                    <label for="ordenarPor">Ordenar Por: </label>
+                    <select id="ordenarPor">
+                        <option value="1">Relevancia</option>
+                        <option value="2">Valoración</option>
+                        <option value="3">Precio</option>
+                    </select>
+                    <br>
+                    <input type="button" value="Actualizar">
+                    <input type="reset">
+                </fieldset>
+            </form>
+        </section>
+
+
+        <section id="products">
+            <h2>Productos</h2>
+            <p id="listado-productos">8 productos</p>
+            <ul>
+                <li>
+                    <article>
+                        <a href="producto.html">
+                            <img src="" alt="">
+                            <p>Anillo Solitario de Diamante</p>
+                            <p><strong>$1,200</strong></p>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="producto.html">
+                            <img src="" alt="">
+                            <p>Aros de Oro</p>
+                            <p><strong>$450</strong></p>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="producto.html">
+                            <img src="" alt="">
+                            <p>Collar de Perlas</p>
+                            <p><strong>$800</strong></p>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="producto.html">
+                            <img src="" alt="">
+                            <p>Broche Vintage de Zafiro</p>
+                            <p><strong>$1,500</strong></p>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="producto.html">
+                            <img src="" alt="">
+                            <p>Pulsera de Tenis de Plata</p>
+                            <p><strong>$950</strong></p>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="producto.html">
+                            <img src="" alt="">
+                            <p>Choker Minimalista de Oro</p>
+                            <p><strong>$350</strong></p>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="producto.html">
+                            <img src="" alt="">
+                            <p>Anillo de Compromiso de Platino</p>
+                            <p><strong>$2,500</strong></p>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="producto.html">
+                            <img src="" alt="">
+                            <p>Pendientes Clásicos de Diamante</p>
+                            <p><strong>$600</strong></p>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+
+        </section>
+
+        <button>Cargar Más</button>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 - JOYERÍA AURA</p>
+        <p><strong>Email: hola@aura.com</strong></p>
+    </footer>
+
+</body>
+
+</html>
